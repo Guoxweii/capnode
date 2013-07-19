@@ -1,5 +1,6 @@
 require "capnode/version"
 require File.expand_path("../capnode/git.rb", __FILE__)
+require File.expand_path("../capnode/setup.rb", __FILE__)
 
 module Capnode
   # Your code goes here...
