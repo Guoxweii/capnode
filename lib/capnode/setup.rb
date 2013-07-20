@@ -9,7 +9,8 @@ Capistrano::Configuration.instance(true).load do
       #   run "mkdir -p '#{target_dir}'"
       #   top.upload(source, File.join(target_dir, target_file))
       # end
-      logger.debug "now execute my own task"
+      logger.trace "now execute my own task"
+      run "mkdir -p /home/gxw/demo/htdocs"
     end
   end
   
