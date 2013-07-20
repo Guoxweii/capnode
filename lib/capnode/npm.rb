@@ -14,5 +14,5 @@ Capistrano::Configuration.instance(true).load do
     end
   end
   
-  after "deploy:setup", "npm:update"
+  after "deploy:restart", "npm:update"
 end
