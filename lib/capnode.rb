@@ -12,4 +12,11 @@ Capistrano::Configuration.instance(true).load do
   
   default_environment["http_proxy"] = fetch("http_proxy") if exists?("http_proxy")
   default_environment["https_proxy"] = fetch("https_proxy") if exists?("https_proxy")
+  
+  namespace :deploy do
+    desc 'finalize_update'
+    task :finalize_update, :roles => :app do
+      #do nothing
+    end
+  end
 end
