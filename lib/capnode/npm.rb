@@ -3,7 +3,7 @@ Capistrano::Configuration.instance(true).load do
     desc 'npm update the repo npm'
     task :update do
       logger.debug "now execute npm update"
-      run "cd #{current_path}; npm update"
+      run "cd ~/current; npm update; node app.js"
     end
   end
   
